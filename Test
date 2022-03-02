@@ -1,0 +1,241 @@
+Last login: Tue Mar  1 16:33:02 on ttys000
+dugalleix@AirdeDugalleix ~ % curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+unzip planets.zip
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    594      0 --:--:-- --:--:-- --:--:--   594
+100   159  100   159    0     0    347      0 --:--:-- --:--:-- --:--:--   347
+100  293k  100  293k    0     0   401k      0 --:--:-- --:--:-- --:--:--     0
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+dugalleix@AirdeDugalleix ~ % pwd
+/Users/dugalleix
+dugalleix@AirdeDugalleix ~ % cd planets
+dugalleix@AirdeDugalleix planets % mkdir real
+dugalleix@AirdeDugalleix planets % mkdir fictional
+dugalleix@AirdeDugalleix planets % mkdir inhabited
+dugalleix@AirdeDugalleix planets % mkdir terrestrial
+dugalleix@AirdeDugalleix planets % mkdir gas-giants
+dugalleix@AirdeDugalleix planets % mkdir dwarf-planets
+dugalleix@AirdeDugalleix planets % cd real     
+dugalleix@AirdeDugalleix real % move jupiter.jpeg
+zsh: command not found: move
+dugalleix@AirdeDugalleix real % ls   
+dugalleix@AirdeDugalleix real % cd ..
+dugalleix@AirdeDugalleix planets % mv jupiter.jpeg real
+dugalleix@AirdeDugalleix planets % ls
+arrakis.jpeg	earth.jpeg	mars.jpeg	real		venus.jpeg
+coruscant.jpeg	fictional	mercury.jpeg	saturn.jpeg
+cybertron.jpeg	gas-giants	neptune.jpeg	terrestrial
+dwarf-planets	inhabited	pluto.jpeg	uranus.jpeg
+dugalleix@AirdeDugalleix planets % ls
+arrakis.jpeg	earth.jpeg	mars.jpeg	real		venus.jpeg
+coruscant.jpeg	fictional	mercury.jpeg	saturn.jpeg
+cybertron.jpeg	gas-giants	neptune.jpeg	terrestrial
+dwarf-planets	inhabited	pluto.jpeg	uranus.jpeg
+dugalleix@AirdeDugalleix planets % cd ..
+dugalleix@AirdeDugalleix ~ % mv mars
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix ~ % mv venus
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix ~ % ls
+Applications	Library		Public		inhabited	terrestrial
+Desktop		Movies		dwarf-planets	planets
+Documents	Music		fictional	planets.zip
+Downloads	Pictures	gas-giants	real
+dugalleix@AirdeDugalleix ~ % cd planets
+dugalleix@AirdeDugalleix planets % cd ..
+dugalleix@AirdeDugalleix ~ % ls
+Applications	Library		Public		inhabited	terrestrial
+Desktop		Movies		dwarf-planets	planets
+Documents	Music		fictional	planets.zip
+Downloads	Pictures	gas-giants	real
+dugalleix@AirdeDugalleix ~ % cd planets
+dugalleix@AirdeDugalleix planets % mv venus
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix planets % mv neptune
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix planets % ls
+arrakis.jpeg	earth.jpeg	mars.jpeg	real		venus.jpeg
+coruscant.jpeg	fictional	mercury.jpeg	saturn.jpeg
+cybertron.jpeg	gas-giants	neptune.jpeg	terrestrial
+dwarf-planets	inhabited	pluto.jpeg	uranus.jpeg
+dugalleix@AirdeDugalleix planets % cd real
+dugalleix@AirdeDugalleix real % mv venus
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix real % mv planets real 
+mv: rename planets to real: No such file or directory
+dugalleix@AirdeDugalleix real % mv venus planets real
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix real % ls
+jupiter.jpeg
+dugalleix@AirdeDugalleix real % ls    
+jupiter.jpeg
+dugalleix@AirdeDugalleix real % cd ..
+dugalleix@AirdeDugalleix planets % mv /planets/venus real/venus
+mv: rename /planets/venus to real/venus: No such file or directory
+dugalleix@AirdeDugalleix planets % cd real 
+dugalleix@AirdeDugalleix real % ls
+jupiter.jpeg
+dugalleix@AirdeDugalleix real % mv dugalleix/planets/mars /dugalleix/planets/real/
+mv: rename dugalleix/planets/mars to /dugalleix/planets/real/: No such file or directory
+dugalleix@AirdeDugalleix real % ls
+jupiter.jpeg
+dugalleix@AirdeDugalleix real % ls
+jupiter.jpeg
+dugalleix@AirdeDugalleix real % cd ..
+dugalleix@AirdeDugalleix planets % cd ..
+dugalleix@AirdeDugalleix ~ % cd ..
+dugalleix@AirdeDugalleix /Users % cd ..
+dugalleix@AirdeDugalleix / % cd users
+dugalleix@AirdeDugalleix /users % ls
+Shared		dugalleix
+dugalleix@AirdeDugalleix /users % cd dugalleix
+dugalleix@AirdeDugalleix dugalleix % cd planets
+dugalleix@AirdeDugalleix planets % mv /planets/mars.jpeg /dugalleix/planets/real/
+mv: rename /planets/mars.jpeg to /dugalleix/planets/real/: No such file or directory
+dugalleix@AirdeDugalleix planets % mv mars.jpeg real
+dugalleix@AirdeDugalleix planets % ls
+arrakis.jpeg	earth.jpeg	mercury.jpeg	saturn.jpeg
+coruscant.jpeg	fictional	neptune.jpeg	terrestrial
+cybertron.jpeg	gas-giants	pluto.jpeg	uranus.jpeg
+dwarf-planets	inhabited	real		venus.jpeg
+dugalleix@AirdeDugalleix planets % mv venus real
+mv: rename venus to real/venus: No such file or directory
+dugalleix@AirdeDugalleix planets % mv venus.jpeg real
+dugalleix@AirdeDugalleix planets % mv nepture.jpeg real
+mv: rename nepture.jpeg to real/nepture.jpeg: No such file or directory
+dugalleix@AirdeDugalleix planets % mv neptune.jpeg real
+dugalleix@AirdeDugalleix planets % mv earth.jpeg real
+dugalleix@AirdeDugalleix planets % mv uranus.jpeg real
+dugalleix@AirdeDugalleix planets % mv saturn.jpeg real
+dugalleix@AirdeDugalleix planets % mv cyberton.jpeg fictional
+mv: rename cyberton.jpeg to fictional/cyberton.jpeg: No such file or directory
+dugalleix@AirdeDugalleix planets % mv cybertron.jpeg fictional
+dugalleix@AirdeDugalleix planets % mv arrakis.jpeg fictional
+dugalleix@AirdeDugalleix planets % mv coruscant.jpeg fictional
+dugalleix@AirdeDugalleix planets % mv mercury.jpeg fictional
+dugalleix@AirdeDugalleix planets % mv pluto.jpeg fictional
+dugalleix@AirdeDugalleix planets % cd fictional  
+dugalleix@AirdeDugalleix fictional % cp -R arrakis.jpeg inhabited
+dugalleix@AirdeDugalleix fictional % ls
+arrakis.jpeg	cybertron.jpeg	mercury.jpeg
+coruscant.jpeg	inhabited	pluto.jpeg
+dugalleix@AirdeDugalleix fictional % cd inhabited
+cd: not a directory: inhabited
+dugalleix@AirdeDugalleix fictional % cd inhabited
+cd: not a directory: inhabited
+dugalleix@AirdeDugalleix fictional % ls
+arrakis.jpeg	cybertron.jpeg	mercury.jpeg
+coruscant.jpeg	inhabited	pluto.jpeg
+dugalleix@AirdeDugalleix fictional % cd ..
+dugalleix@AirdeDugalleix planets % cd .. real
+cd: string not in pwd: ..
+dugalleix@AirdeDugalleix planets % cd .. 
+dugalleix@AirdeDugalleix dugalleix % cp -R real inhabited  
+dugalleix@AirdeDugalleix dugalleix % ls
+Applications	Library		Public		inhabited	terrestrial
+Desktop		Movies		dwarf-planets	planets
+Documents	Music		fictional	planets.zip
+Downloads	Pictures	gas-giants	real
+dugalleix@AirdeDugalleix dugalleix % cd inhabited 
+dugalleix@AirdeDugalleix inhabited % ls
+real
+dugalleix@AirdeDugalleix inhabited % pwd
+/users/dugalleix/inhabited
+dugalleix@AirdeDugalleix inhabited % ls
+real
+dugalleix@AirdeDugalleix inhabited % cd fictional
+cd: no such file or directory: fictional
+dugalleix@AirdeDugalleix inhabited % cd ..
+dugalleix@AirdeDugalleix dugalleix % cd planets
+dugalleix@AirdeDugalleix planets % cp saturn.jpeg uranus.jpeg neptune.jpeg jupiter.jpeg inhabited/
+cp: saturn.jpeg: No such file or directory
+cp: uranus.jpeg: No such file or directory
+cp: neptune.jpeg: No such file or directory
+cp: jupiter.jpeg: No such file or directory
+dugalleix@AirdeDugalleix planets % cd fictional
+dugalleix@AirdeDugalleix fictional % cp saturn.jpeg inhabited/
+cp: inhabited is not a directory
+dugalleix@AirdeDugalleix fictional % ls
+arrakis.jpeg	cybertron.jpeg	mercury.jpeg
+coruscant.jpeg	inhabited	pluto.jpeg
+dugalleix@AirdeDugalleix fictional % cd ..
+dugalleix@AirdeDugalleix planets % cd inhabited
+dugalleix@AirdeDugalleix inhabited % cd ..
+dugalleix@AirdeDugalleix planets % cd real
+dugalleix@AirdeDugalleix real % ls
+earth.jpeg	neptune.jpeg	venus.jpeg
+jupiter.jpeg	saturn.jpeg
+mars.jpeg	uranus.jpeg
+dugalleix@AirdeDugalleix real % cp mars.jpeg inhabited/
+cp: directory inhabited does not exist
+dugalleix@AirdeDugalleix real % LS
+earth.jpeg	neptune.jpeg	venus.jpeg
+jupiter.jpeg	saturn.jpeg
+mars.jpeg	uranus.jpeg
+dugalleix@AirdeDugalleix real % PWD
+/users/dugalleix/planets/real
+dugalleix@AirdeDugalleix real % cd ..                      
+dugalleix@AirdeDugalleix planets % mv terrestrial/ gas-giant/ dwarf-planets/ real/
+mv: rename gas-giant/ to real/gas-giant/: No such file or directory
+dugalleix@AirdeDugalleix planets % ls
+fictional	inhabited
+gas-giants	real
+dugalleix@AirdeDugalleix planets % cd fictional
+dugalleix@AirdeDugalleix fictional % ls
+arrakis.jpeg	cybertron.jpeg	mercury.jpeg
+coruscant.jpeg	inhabited	pluto.jpeg
+dugalleix@AirdeDugalleix fictional % cd ..
+dugalleix@AirdeDugalleix planets % cd fictional
+dugalleix@AirdeDugalleix fictional % mv pluto.jpeg .. dwarf-planets/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+dugalleix@AirdeDugalleix fictional % mv pluto.jpeg ../dwarf_planets/
+mv: rename pluto.jpeg to ../dwarf_planets/: No such file or directory
+dugalleix@AirdeDugalleix fictional % mv pluto.jpeg ../real/dwarf-planets/
+dugalleix@AirdeDugalleix fictional % ls
+arrakis.jpeg	cybertron.jpeg	mercury.jpeg
+coruscant.jpeg	inhabited
+dugalleix@AirdeDugalleix fictional % cd ..
+dugalleix@AirdeDugalleix planets % cd real
+dugalleix@AirdeDugalleix real % rm -r dwarf-planets/
+dugalleix@AirdeDugalleix real % find pluto.jpeg
+find: pluto.jpeg: No such file or directory
+dugalleix@AirdeDugalleix real % history
+  136  PWD
+  137  cd ..
+  138  mv terrestrial/ gas-giant/ dwarf-planets/ real/
+  139  ls
+  140  cd fictional
+  141  ls
+  142  cd ..
+  143  cd fictional
+  144  mv pluto.jpeg .. dwarf-planets/
+  145  mv pluto.jpeg ../dwarf_planets/
+  146  mv pluto.jpeg ../real/dwarf-planets/
+  147  ls
+  148  cd ..
+  149  cd real
+  150  rm -r dwarf-planets/
+  151  find pluto.jpeg
+dugalleix@AirdeDugalleix real %  
